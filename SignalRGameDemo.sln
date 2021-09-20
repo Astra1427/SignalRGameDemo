@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1259
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalRGameDemo", "SignalRGameDemo\SignalRGameDemo.csproj", "{C4B20EBD-2A57-48FA-861D-3DB9F563FBD5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C4B20EBD-2A57-48FA-861D-3DB9F563FBD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4B20EBD-2A57-48FA-861D-3DB9F563FBD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4B20EBD-2A57-48FA-861D-3DB9F563FBD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4B20EBD-2A57-48FA-861D-3DB9F563FBD5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B8DA996E-D1D4-4123-B8F1-D950F2531ED8}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,113 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>GameScene</title>
+    <script src="~/Scripts/jquery-3.3.1.min.js"></script>
+    <script src="~/Scripts/jquery.signalR-2.2.2.min.js"></script>
+    <script src="/signalr/hubs/"></script>
+</head>
+<body>
+    <div> 
+        <input type="text" id="txtMsg" value="" />
+        <input type="button" id="btnSend" value="发送" onclick="sendMessage()" />
+
+    </div>
+    <div id="player" style="background-color:transparent;width:50px;height:50px;position:absolute;" PlayerID="@ViewBag.PlayerID"></div>
+    <script src="~/Scripts/GameApp.js"></script>
+    <script>
+        
+        /*
+        var chat = $.connection.gameHub;
+        chat.client.sendMsg = function (content) {
+            console.log(content);
+        };
+        chat.client.notificationMove = function (dir, x, y) {
+            $("#player").text(dir);
+            
+            $("#player").css("left", x+"px");
+            $("#player").css("top", y + "px");
+        };
+
+
+
+        $.connection.hub.start().done(function () {
+            console.log("SignalR Connected!");
+
+            var player = {
+                x: 10,
+                y: 10,
+                direction : 2,
+            };
+
+            setInterval(() => {
+                if (!isNeedNotify) {
+                    return;
+                }
+                if (direction == 0 || direction == 2) {
+                    player.x += directionSpeed;
+                    $("#player").css("left", player.x);
+                } else if (direction == 1 || direction == 3) {
+                    player.y += directionSpeed;
+                    $("#player").css("top", player.y);
+                }
+
+                chat.server.move(direction, player.x, player.y);
+            }, 1);
+
+        }).fail(function () {
+            console.log("SignalR Disconnect");
+        });
+
+        function sendMessage() {
+            chat.server.sendMsg($("#txtMsg").val());
+        }
+
+        var direction = 0;//0 left, 1 top , 2 right , 3 down
+        var directionSpeed = 0;
+        var isNeedNotify = false;
+
+        $(document).keydown(event => {
+            isNeedNotify = true;
+            console.log(event);
+            
+            if (event.keyCode == 65) {
+                direction = 0;//A
+                directionSpeed = -2;
+            } else if (event.keyCode == 87) {
+                direction = 1;//W
+                directionSpeed = -2;
+            } else if (event.keyCode == 68) {
+                direction = 2;//D
+                directionSpeed = 2;
+            } else if (event.keyCode == 83) {
+                direction = 3;//S
+                directionSpeed = 2;
+            } else {
+                directionSpeed = 0;
+            }
+        });
+
+        $(document).keyup(event => {
+            if (event.keyCode == 65 || event.keyCode == 87 || event.keyCode == 68 || event.keyCode == 83) {
+                //direction = -1;//A
+                directionSpeed = 0;
+                isNeedNotify = false;
+            }
+        });
+
+
+        $(function () {
+
+
+        });
+        */
+    </script>
+</body>
+</html>
